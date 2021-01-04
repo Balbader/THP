@@ -1,0 +1,56 @@
+body {
+    font-family: arial, sans-serif;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+nav ul {
+    float: right;
+}
+
+#btn {
+    display: block;
+    float: right;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.container {
+    padding-top: 150px;
+    text-align: center;
+}
+
+/*------ footer ------*/
+
+.left_nav {
+    float: left;
+}
+
+.right_nav {
+    float: right;
+}
+
+.btm_nav {
+    display: inline;
+    font-size: 14px;
+}
+
+footer {
+    line-height: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eeeeeede;
+    border-top: solid 1px #e4e4e4;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
