@@ -151,6 +151,7 @@ hr {
     padding-right: 60px;
 }
 
+/*------ Left Nav ------*/
 .left_nav {
     float: left;
     padding-top: 5px;
@@ -172,6 +173,7 @@ hr {
     text-decoration: underline 1px solid rgb(119, 119, 119);
 }
 
+/*------ Right Nav ------*/
 .right_nav {
     float: right;
     padding-top: 5px ;
