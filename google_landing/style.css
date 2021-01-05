@@ -47,7 +47,7 @@ body {
 
 /*------ Main Content ------*/
 .container {
-    padding-top: 150px;
+    padding-top: 185px;
     text-align: center;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 input {
-    width: 25%;
+    width: 30%;
     border: 1px solid #dbd9d9;
     border-radius: 25px;
     padding-top: 16px;
@@ -161,10 +161,15 @@ hr {
     padding: 5px;
 }
 
-.left_nav a {
+.left_nav li a {
     color:rgb(119, 119, 119);
     padding-right: 15px;
     font-size: 15px;
+    text-decoration: none;
+}
+
+.left_nav li a:hover {
+    text-decoration: underline 1px solid rgb(119, 119, 119);
 }
 
 .right_nav {
@@ -178,10 +183,15 @@ hr {
     padding: 5px;
 }
 
-.right_nav a {
+.right_nav li a {
     color:rgb(119, 119, 119);
     padding-left: 15px;
     font-size: 15px;
+    text-decoration: none;
+}
+
+.right_nav li a:hover {
+    text-decoration: underline 1px solid rgb(119, 119, 119);
 }
 
 .btm_nav {
