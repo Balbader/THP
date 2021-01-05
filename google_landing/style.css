@@ -123,6 +123,10 @@ input:hover {
     padding-top: 5px;
 }
 
+.offered a {
+    color: blue;
+}
+
 /*------ footer ------*/
 footer {
     line-height: 5px;
