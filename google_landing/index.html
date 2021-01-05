@@ -10,22 +10,33 @@
 
 <body>
     <nav class="header">
+        <button id="btn">
+            <a
+                href="https://accounts.google.com/ServiceLogin/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=AddSession"></a>
+            <strong>Sign in</strong></button>
+        <img class="menu" src="https://icon-library.com/images/app-menu-icon/app-menu-icon-10.jpg" alt="Magnifier Icon">
         <ul class="top_nav" style="list-style-type: none;">
-            <li><a style="text-decoration: none" href="#">Gmail</a></li>
-            <li><a style="text-decoration: none" href="#">Images</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Gmail</a></li>
         </ul>
-        <button id="btn"><strong>Sign In</strong></button>
     </nav>
     <div class="container">
         <div class="logo">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Image">
         </div>
         <div id="search_bar">
-            <input type="text" placeholder="Search">
+            <img class="icon" src="https://freesvg.org/img/1382519138.png" alt="Magnifier Icon">
+            <input type="text">
         </div>
         <div class="button">
             <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
+            <button class="lucky"><span>I'm Feeling Lucky</span></button>
+        </div>
+        <div class="jugement">
+            <a style="text-decoration: none"
+                href="https://support.google.com/websearch/answer/9586983?p=fr_tos&visit_id=637427072354171291-4231467859&rd=1">
+                Jugement du TJ de Paris du 12 février 2019
+            </a>
         </div>
         <div class="offered">
             <p>Google offered in: <a style="text-decoration: none" href="#">Français</a></p>
@@ -33,7 +44,7 @@
     </div>
     <footer>
         <p>France</p>
-        <hr size="1" color="#e4e4e4">
+        <hr size="1" color="#e4e4e4" width="100%">
         <ul class="btm_nav" style="list-style-type: none">
             <div class="left_nav">
                 <li><a style="text-decoration: none" href="#">Advertising</a></li>
