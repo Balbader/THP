@@ -8,12 +8,15 @@
     margin-bottom: 1.5rem;
     text-align: center;
   }
+
   .marketing h2 {
     font-weight: 400;
   }
+
   .marketing .col-lg-4 p {
       text-align: left;
   }
+
   .marketing h1 {
       font-size: 70px;
       font-weight: normal;
