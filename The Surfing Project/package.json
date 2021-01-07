@@ -1,0 +1,14 @@
+{
+  "name": "the-surfing-project",
+  "version": "1.0.0",
+  "description": "Project for the hacking project bootcamp paris",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Basil Alba",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
