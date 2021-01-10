@@ -15,7 +15,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-link {
-    font-weight: 700;
+    font-weight: lighter;
 }
 
 /*------Hero------*/
@@ -33,6 +33,12 @@ h1, h2, h3, h4 {
     transform: translate(-50%, -50%);
 }
 
-/*------Call to action------*/
+/*------About------*/
+.about {
+    position: relative;
+}
 
+.about .container {
+    text-align: center;
+}
 
