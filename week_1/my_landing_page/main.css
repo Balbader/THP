@@ -33,12 +33,51 @@ h1, h2, h3, h4 {
     transform: translate(-50%, -50%);
 }
 
+#lets_go_1 {
+    border-color: orange;
+    color: orange;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px; 
+}
+
+#lets_go_1:hover {
+    background-color: orange;
+    color: white;
+}
+
 /*------About------*/
 .about {
     position: relative;
+    height: 400px;
 }
 
 .about .container {
     text-align: center;
+    padding-top: 50px;
+    color: white;
 }
 
+.about_title {
+    padding-top: 20px;
+}
+
+.container .about_text {
+    width: 500px;
+    transform: translate(0, -30%);
+}
+
+#lets_go {
+    border-color: orange;
+    color: orange;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#lets_go:hover {
+    background-color: orange;
+    color: white;
+}
