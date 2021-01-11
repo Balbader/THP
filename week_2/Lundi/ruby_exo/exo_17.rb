@@ -1,18 +1,19 @@
-puts "Enter date of birth: " 
-year_of_birth = gets.chomp.to_i
+puts "Enter age:  " 
+age = gets.chomp.to_i
 year = 2021
-age = 2021 - year_of_birth
+year_of_birth = year - age
 age_of_birth = 0
 
-if year_of_birth < year
-  while year_of_birth < year
-    puts "In  #{year_of_birth} you were #{age_of_birth}"
-    year_of_birth += 1
-    age_of_birth += 1
-  end
+while age_of_birth < age - 1
+  puts "#{year - year_of_birth} years ago, you were #{age_of_birth}"
+  year_of_birth += 1
+  age_of_birth += 1
 end
 
-if year_of_birth = year
-  puts "In #{year - age/2} you were 1/2 of your age today!"
+if year - year_of_birth == 1
+    puts "#{year - year_of_birth} year ago, you were #{age_of_birth}"
 end
 
+if age_of_birth = age
+ puts "#{age - age/2} years ago, you were half of your age today!" 
+end
