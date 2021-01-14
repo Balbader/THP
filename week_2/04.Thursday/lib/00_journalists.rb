@@ -23,30 +23,40 @@ def maj(arr)
     if up == true
       i += 1
       count += 1
-      puts count
     else
     i += 1
     end
   end
-  print count
 end
 
 def reorder_alpha(arr)
   puts arr.sort
 end
 
-def handle_size
-  
+def handle_size(arr)
+  puts arr.sort_by { |i| i.length }
 end
 
+def handle_spot(arr)
+  i = 0
+  count = 0
+  while arr.length
+    if arr[i] != "JS123"
+      i += 1
+      count += 1
+    else
+      puts count
+      break
+    end
+  end
+end
 
-
-
-
+handle_spot(arr)
 =begin
 elements_number(arr)
 elements_short(arr)
 five(arr)
 maj(arr)
 reorder_alpha(arr)
+handle_size(arr)
 =end
