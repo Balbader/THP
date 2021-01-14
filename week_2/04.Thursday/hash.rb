@@ -9,7 +9,7 @@ states = {
 }
 
 
-# creaite a basic set ofstated and some cities in them
+# creaite a basic set of states and some cities in them
 
 cities = {
   "CA" => "San Francisco",
