@@ -1,4 +1,3 @@
-arr = ["aS", "sA2", "JS123", "s234", "s2345"]
 
 def elements_number(arr)
   puts "This arr has a total of " +  arr.length.to_s + " handles."
@@ -51,7 +50,19 @@ def handle_spot(arr)
   end
 end
 
-handle_spot(arr)
+def repartition(arr)
+  i = 0
+
+  while i < 17
+    puts "Adresses with #{i} character: #{arr.count {|x| x.length == i}}"
+    i += 1
+  end
+  puts "Adresses with 33 characters: #{arr.count {|x| x.length == 33}}"
+end
+
+
+repartition(arr)
+
 =begin
 elements_number(arr)
 elements_short(arr)
