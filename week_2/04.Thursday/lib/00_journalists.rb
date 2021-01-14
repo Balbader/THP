@@ -29,7 +29,7 @@ def handle_spot(arr)
   i = 0
   count = 0
   while arr.length
-    if arr[i] != "JS123"
+    if arr[i] != "@epenser"
       i += 1
       count += 1
     else
