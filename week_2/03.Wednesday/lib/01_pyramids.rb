@@ -18,7 +18,7 @@ def wtf_pyramid
   if nb > 25 || nb < 1
     puts "Error!"
   else
-    nb.times do |i|
+    for i in (0..nb - 2) do
       puts " " * (nb - i - 1) + "#" * (i + i + 1)
     end
   end
