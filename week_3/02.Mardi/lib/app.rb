@@ -7,6 +7,7 @@ elsif nb % 3 == 0 || nb % 5 == 0
     return false
   end
 end
+
 def sum_of_3_or_5_multiples?(nb)
   sum = 0
   i = 0
@@ -24,4 +25,22 @@ def sum_of_3_or_5_multiples?(nb)
   return sum
 end
 
-def ceasar_cypher(string, key)
+def ceasar_cypher(string, nb)
+  str = string.chars.map{|x| x.ord}
+  i = 0
+  while str[i]
+  if str[i] >= 97 && str[i] <= 122
+      str[i] += nb
+      if str[i] > 122
+          str[i] = str[i] - 122 + 97 - 1
+      end
+  elsif str[i] >= 65 && str[i] <= 90
+      str[i] += nb
+      if str[i] > 90
+          str[i] = str[i] - 90 + 65 - 1
+      end
+  end
+      i += 1
+  end
+  return str.map{ |x| x.chr}.join("")
+end
