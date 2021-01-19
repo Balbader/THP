@@ -44,3 +44,32 @@ def ceasar_cypher(string, nb)
   end
   return str.map{ |x| x.chr}.join("")
 end
+
+def word_counter(str, arr)
+  dictionnary = ["below", "down", "go", "going", "horn", "how", "howdy", "it", "i", "low", "own", "part", "partner", "sit"]
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
