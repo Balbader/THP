@@ -8,5 +8,7 @@ def scraper
   parsed_page = Nokogiri::HTML(unparsed_page)
   byebug
 end
+puts "hello world"
+
 
 scraper
