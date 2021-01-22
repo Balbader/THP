@@ -5,6 +5,7 @@ file = File.open("/Users/basilalbader/dev/the_hacking_project/THP/week_3/05.Vend
 contenu = file.puts("source 'https://rubygems.org'\n")
 puts "add gem"
 input = gets.chomp
+file.puts("gem '#{input[i]}'")
 file.close
 
 
