@@ -8,7 +8,7 @@ input = gets.chomp
 file.close
 
 
-#--------------- Using argument value (ARGV)
+#--------------- Using argument value aka "ARGV"
 
 file = File.open("/Users/basilalbader/dev/the_hacking_project/THP/week_3/05.Vendredi/Gemfile", "a")
 contenu = file.puts("source 'https://rubygems.org'\n")
