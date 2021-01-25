@@ -41,9 +41,29 @@ class User
   def initialize(email_to_save)
     @email = email_to_save
     @@user_count = @@user_count + 1 #for each user created, we increment @@user_count by 1
-    puts "We've sent a welcome email!"
+    puts "We've sent you a welcome email!"
   end
+
+  def self.count
+    return @@user_count
+  end
+
 end
 
 binding.pry
 puts "end of file"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
