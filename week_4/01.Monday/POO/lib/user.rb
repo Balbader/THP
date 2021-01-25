@@ -1,7 +1,8 @@
 require "pry"
 
 class User
-attr_writer :mastercard
+attr_writer :mastercard #store info without being able to read/access it easily
+attr_reader :birthdate #read the stored information easily without being able to change it
   def greet
     puts "Hello, world!"
   end 
