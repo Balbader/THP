@@ -1,8 +1,12 @@
 require "pry"
 
 class User
-attr_writer :mastercard #store info without being able to read/access it easily
-attr_reader :birthdate #read the stored information easily without being able to change it
+
+  attr_writer :mastercard #store info without being able to read/access it easily
+  attr_reader :birthdate #read the stored information easily without being able to change it
+  attr_accessor :email #access the stored information in read and write mode
+
+  @@user_count = 0 #class variable that will count the number of instances created
   def greet
     puts "Hello, world!"
   end 
@@ -28,6 +32,15 @@ attr_reader :birthdate #read the stored information easily without being able to
     return @mastercard
   end
 
+  def update_birthdate(birthdate_to_update)
+    @birthdate = birthdate_to_update
+  end
+
+  #initialize
+  def initialize(email_to_save)
+    @email = email_to_save
+    puts "We've sent a welcome email!"
+  end
 end
 
 binding.pry
