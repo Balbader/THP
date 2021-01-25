@@ -7,6 +7,7 @@ class User
   attr_accessor :email #access the stored information in read and write mode
 
   @@user_count = 0 #class variable that will count the number of instances created
+
   def greet
     puts "Hello, world!"
   end 
@@ -39,6 +40,7 @@ class User
   #initialize
   def initialize(email_to_save)
     @email = email_to_save
+    @@user_count = @@user_count + 1 #for each user created, we increment @@user_count by 1
     puts "We've sent a welcome email!"
   end
 end
