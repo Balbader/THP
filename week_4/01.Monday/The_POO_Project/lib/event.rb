@@ -35,15 +35,15 @@ class Event
   end
 
   def age_analysis
-    age_array = Array.new #On initialise un array qui va contenir les âges de tous les participants à un évènement
-    average = 0 #On initialise une variable pour calculer la moyenne d'âge à l'évènement
+    age_array = Array.new
+    average = 0
 
-    @attendees.each do |attendee| #On parcourt tous les participants (objets de type User)
-      age_array << attendee.age #leur âge est stocké dans l'array des âges
-      average = average + attendee.age #leur âge est additionné pour préparer le calcul de la moyenne
+    @attendees.each do |attendee|
+      age_array << attendee.age
+      average = average + attendee.age
     end
 
-    average = average / @attendees.length #on divise la somme des âges pour avoir la moyenne
+    average = average / @attendees.length
 
     puts "Voici les âges des participants :"
     puts age_array.join(", ")
