@@ -36,6 +36,22 @@ class Event
   def is_soon?
     @start_date <= Time.now + 1800
   end
+
+  def age_analysis
+    age_array = [] #On initialise un array qui va contenir les âges de tous les participants à un évènement
+    average = 0 #On initialise une variable pour calculer la moyenne d'âge à l'évènement
+
+    @attendees.each do |attendee| #On parcourt tous les participants (objets de type User)
+      age_array << attendee.age #leur âge est stocké dans l'array des âges
+      average = average + attendee.age #leur âge est additionné pour préparer le calcul de la moyenne
+    end
+
+    average = average / @attendees.length #on divise la somme des âges pour avoir la moyenne
+
+    puts "Voici les âges des participants :"
+    puts age_array.join(", ")
+    puts "La moyenne d'âge est de #{average} ans"
+  end
   
   def to_s
     puts "> Meeting title: #{self.title}"
@@ -46,3 +62,6 @@ class Event
     puts "> Starting soon: #{self.is_soon?}"
   end
 end
+
+binding.pry
+puts "end of file"
