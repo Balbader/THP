@@ -2,10 +2,7 @@ require 'bundler'
 Bundler.require
 
 class Event
-  attr_accessor :start_date
-  attr_accessor :title
-  attr_reader :duration
-  attr_reader :attendees
+  attr_accessor :start_date, :title, :duration, :attendees
 
   def initialize(date, evt_length, name, arr)
     @start_date = Time.parse(date)
@@ -38,7 +35,7 @@ class Event
   end
 
   def age_analysis
-    age_array = [] #On initialise un array qui va contenir les âges de tous les participants à un évènement
+    age_array = Array.new #On initialise un array qui va contenir les âges de tous les participants à un évènement
     average = 0 #On initialise une variable pour calculer la moyenne d'âge à l'évènement
 
     @attendees.each do |attendee| #On parcourt tous les participants (objets de type User)
@@ -63,5 +60,24 @@ class Event
   end
 end
 
-binding.pry
-puts "end of file"
+class WorkEvent < Event
+  attr_accessor :location
+
+  def initialize(date, evt_length, name, arr, location)
+    @location = location
+
+    super(date, evt_length, name, arr)
+  end
+
+
+  def is_event_acceptable?
+
+    if @attendees.length > 3 || @duration > 60
+      puts "Cette réunion ne respecte pas nos bonnes pratiques !"
+      return false
+    else
+      puts "Cette réunion est OK."
+      return true
+    end
+  end
+end
