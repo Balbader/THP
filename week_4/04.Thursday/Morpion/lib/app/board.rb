@@ -1,146 +1,151 @@
 require_relative 'board_case'
 
 class Board
-  attr_accessor :arr_boardcase
 
-  def initialize
-    @case_1 = BoardCase.new("A1", ".")
-    @case_2 = BoardCase.new("A2", ".")
-    @case_3 = BoardCase.new("A3", ".")
-    @case_4 = BoardCase.new("B1", ".")
-    @case_5 = BoardCase.new("B2", ".")
-    @case_6 = BoardCase.new("B3", ".")
-    @case_7 = BoardCase.new("C1", ".")
-    @case_8 = BoardCase.new("C2", ".")
-    @case_9 = BoardCase.new("C3", ".")
-    @arr_boardcase = [@case_1, @case_2, @case_3, @case_4, @case_5, @case_6, @case_7, @case_8, @case_9]
-  end
+	attr_accessor :arr_boardcase
 
-  def play_turn(actual_player, table)
+	def initialize
+		@case1 = BoardCase.new("A1",'.')
+		@case2 = BoardCase.new("A2",'.')
+		@case3 = BoardCase.new("A3",'.')
+		@case4 = BoardCase.new("B1",'.')
+		@case5 = BoardCase.new("B2",'.')
+		@case6 = BoardCase.new("B3",'.')
+		@case7 = BoardCase.new("C1",'.')
+		@case8 = BoardCase.new("C2",'.')
+		@case9 = BoardCase.new("C3",'.')
+		@arr_boardcase = [@case1,@case2,@case3,@case4,@case5,@case6,@case7,@case8,@case9]
+	end
+
+	def play_turn(board,current_player)
     game_on = true
     while game_on
-      puts "#{actual_player.player_name} what position would you like ?"
+      print "#{current_player.player_name}, which position would you like to hit? "
       answer = gets.chomp.upcase
       case answer
-      when ("A1")
-        if table.arr_boardcase[0].token == "."
-          table.arr_boardcase[0].token = actual_player.token
-          game_on = false
-        else
-          puts "You fucked, try again !"
-        end
-      when ("A2")
-        if table.arr_boardcase[1].token == "."
-          table.arr_boardcase[1].token = actual_player.token
-          game_on = false
-        else
-          puts "You fucked, try again !"
-        end
-      when ("A3")
-        if table.arr_boardcase[2].token == "."
-          table.arr_boardcase[2].token = actual_player.token
-          game_on = false
-        else
-          puts "You fucked, try again !"
-        end
-      when ("B1")
-        if table.arr_boardcase[3].token == "."
-            table.arr_boardcase[3].token = actual_player.token
+      when "A1"
+          if board.arr_boardcase[0].token == '.'
+            board.arr_boardcase[0].token  = current_player.player_token
             game_on = false
-        else
-            puts "You fucked, try again !"
-        end
-      when ("B2")
-        if table.arr_boardcase[4].token == "."
-            table.arr_boardcase[4].token = actual_player.token
+          else
+            puts "You fucked... choose another one!"
+          end
+      when "A2"
+          if board.arr_boardcase[1].token == '.'
+            board.arr_boardcase[1].token  = current_player.player_token
             game_on = false
+          else
+              puts "In your case, suicide is considered as a duty... choose another one!"
+          end
+      when "A3"
+          if board.arr_boardcase[2].token == '.'
+              board.arr_boardcase[2].token  = current_player.player_token
+              game_on = false
+          else
+              puts "Come on dude.. What the hell!! Choose another one!"
+          end
+      when "B1"
+          if board.arr_boardcase[3].token == '.'
+              board.arr_boardcase[3].token  = current_player.player_token
+              game_on = false
+          else
+              puts "Seriously... Go get a brain.. and while you're at it.. choose another one!"
+          end
+      when "B2"
+          if board.arr_boardcase[4].token == '.'
+              board.arr_boardcase[4].token  = current_player.player_token
+              game_on = false
+          else
+              puts "I'm looking for a job.. now way I'm sticking around. Meanwhile.. choose another one!"
+          end
+      when "B3"
+          if board.arr_boardcase[5].token == '.'
+              board.arr_boardcase[5].token  = current_player.player_token
+              game_on = false
+          else
+              puts "I have a rope for you... and you should use it. But first choose another one!"
+          end
+      when "C1"
+          if board.arr_boardcase[6].token == '.'
+              board.arr_boardcase[6].token  = current_player.player_token
+              game_on = false
+          else
+              puts "Kill yourself! but first choose another one!"
+          end
+      when "C2"
+          if board.arr_boardcase[7].token == '.'
+              board.arr_boardcase[7].token  = current_player.player_token
+              game_on = false
+          else
+              puts "Stop pushing the Q-tip when it hits a wall!!!! Choose another one."
+          end
+      when "C3"
+          if board.arr_boardcase[8].token =='.'
+              board.arr_boardcase[8].token  = current_player.player_token
+              game_on = false
+          else
+              puts "While I'm starting to dig my own grave and burry myself in it, I suggest that you chooser another one!"
+          end
         else
-            puts "You fucked, try again !"
-        end
-      when ("B3")
-        if table.arr_boardcase[5].token == "."
-            table.arr_boardcase[5].token = actual_player.token
-            game_on = false
-        else
-            puts "You fucked, try again !"
-        end
-      when ("C1")
-        if table.arr_boardcase[6].token == "."
-            table.arr_boardcase[6].token = actual_player.token
-            game_on = false
-        else
-            puts "You fucked, try again !" 
-        end
-      when ("C2")
-        if table.arr_boardcase[7].token == "."
-            table.arr_boardcase[7].token = actual_player.token
-            game_on = false
-        else
-            puts "You fucked, try again !"
-        end
-      when ("C3")
-        if table.arr_boardcase[8].token == "."
-            table.arr_boardcase[8].token = actual_player.token
-            game_on = false
-        else
-            puts "You fucked, try again !"
-        end
-      else
-      puts "WRONG SPOT"
+          puts "Fucking wrong spot you idiot!"
       end
     end
-  end 
+	end
 
-  def victory?
-    #TO DO : une méthode qui vérifie le plateau et indique s'il y a un vainqueur ou match nul
-    # la victoire y est quand
-    ## 1- case 1/ case 2 / case 3 similaires
-    ## 2- case 4/ case 5/ case 6  similaires
-    ## 3- case 7/ case 8/ case 9  similaires
-    ## 4- case 1/ case 4/ case 7  similaires
-    ## 5- case 2/ case 5/ case 8  similaires
-    ## 6- case 3/ case 6/ case 9  similaires
-    ## 7- case 1/ case 5/ case 9  similaires
-    ## 8- case 3/ case 5/ case 7  similaires
-    ## 9- pas de similitudes ==> égalité
+	def victory?(board)
+		# Tests for all horizontal combos
+		if board.arr_boardcase[0].token == 'X' && board.arr_boardcase[1].token == 'X' && board.arr_boardcase[2].token == 'X'
+			return true
+		end
+		if board.arr_boardcase[0].token == 'O' && board.arr_boardcase[1].token == 'O' && board.arr_boardcase[2].token == 'O'
+			return true
+            end
+		if board.arr_boardcase[3].token == 'X' && board.arr_boardcase[4].token == 'X' && board.arr_boardcase[5].token == 'X'
+			return true
+		end
+		if board.arr_boardcase[3].token == 'O' && board.arr_boardcase[4].token == 'O' && board.arr_boardcase[5].token == 'O'
+			return true
+		end
+		if board.arr_boardcase[6].token == 'X' && board.arr_boardcase[7].token == 'X' && board.arr_boardcase[8].token == 'X'
+			return true
+		end
+		if board.arr_boardcase[6].token == 'O' && board.arr_boardcase[7].token == 'O' && board.arr_boardcase[8].token == 'O'
+			return true
+		end
 
-    if table.arr_boardcase[0].token = x && table.arr_boardcase[1].token = x && table.arr_boardcase[2].token = x
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[0].token = x && table.arr_boardcase[3].token = x && table.arr_boardcase[6].token = x
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[0].token = x && table.arr_boardcase[4].token = x && table.arr_boardcase[8].token = x
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[3].token = x && table.arr_boardcase[4].token = x && table.arr_boardcase[5].token = x
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[6].token = x && table.arr_boardcase[7].token = x && table.arr_boardcase[8].token = x
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[1].token = x && table.arr_boardcase[4].token = x && table.arr_boardcase[7].token = x
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[2].token = x && table.arr_boardcase[5].token = x && table.arr_boardcase[8].token = x
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[2].token = x && table.arr_boardcase[4].token = x && table.arr_boardcase[6].token = x
-      puts "Congrats, YOU WON!"
+		# test for all vertical combos
+		if board.arr_boardcase[0].token == 'X' && board.arr_boardcase[3].token == 'X' && board.arr_boardcase[6].token == 'X'
+			return true
+		end
+		if board.arr_boardcase[0].token == 'O' && board.arr_boardcase[3].token == 'O' && board.arr_boardcase[6].token == 'O'
+			return true
+		end
+		if board.arr_boardcase[1].token == 'X' && board.arr_boardcase[4].token == 'X' && board.arr_boardcase[7].token == 'X'
+			return true
+		end
+		if board.arr_boardcase[1].token == 'O' && board.arr_boardcase[4].token == 'O' && board.arr_boardcase[7].token == 'O'
+			return true
+		end
+		if board.arr_boardcase[2].token == 'X' && board.arr_boardcase[5].token == 'X' && board.arr_boardcase[8].token == 'X'
+			return true
+		end
+		if board.arr_boardcase[2].token == 'O' && board.arr_boardcase[5].token == 'O' && board.arr_boardcase[8].token == 'O'
+			return true
+		end
 
-    #------------------- CAS DE VICTOIRE TOKEN "O"---------------------------------------------------------------
+		# test for all diagonal
+		if board.arr_boardcase[0].token == 'X' && board.arr_boardcase[4].token == 'X' && board.arr_boardcase[8].token == 'X'
+			return true
+		end
+		if board.arr_boardcase[0].token == 'O' && board.arr_boardcase[4].token == 'O' && board.arr_boardcase[8].token == 'O'
+			return true
+		end
+		if board.arr_boardcase[2].token == 'X' && board.arr_boardcase[4].token == 'X' && board.arr_boardcase[6].token == 'X'
+			return true
+		end
+		if board.arr_boardcase[2].token == 'O' && board.arr_boardcase[4].token == 'O' && board.arr_boardcase[6].token == 'O'
+			return true
+		end
 
-    elsif table.arr_boardcase[0].token = o && table.arr_boardcase[1].token = o && table.arr_boardcase[2].token = o
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[0].token = o && table.arr_boardcase[3].token = o && table.arr_boardcase[6].token = o
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[0].token = o && table.arr_boardcase[4].token = o && table.arr_boardcase[8].token = o
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[3].token = o && table.arr_boardcase[4].token = o && table.arr_boardcase[5].token = o
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[6].token = o && table.arr_boardcase[7].token = o && table.arr_boardcase[8].token = o
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[1].token = o && table.arr_boardcase[4].token = o && table.arr_boardcase[7].token = o
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[2].token = o && table.arr_boardcase[5].token = o && table.arr_boardcase[8].token = o
-      puts "Congrats, YOU WON!"
-    elsif table.arr_boardcase[2].token = o && table.arr_boardcase[4].token = o && table.arr_boardcase[6].token = o
-      puts "Congrats, YOU WON!"
-    else
-      puts "Douchey.. nobody won dumbass"
-    end
-  end
+	end
 end
