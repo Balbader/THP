@@ -1,0 +1,12 @@
+<h1>Welcome <%= @user.first_name %> <%= @user.last_name %>!</h1>
+<p>The random_number selected is : <strong> <%= @random_number%> </strong>, thank you for playing.</p>
+
+<h2>Enter first full name</h2>
+<form action="/" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    First :
+    <input type="text" name="first_name"><br>
+    Last :
+    <input type="text" name="last_name"><br>
+    <input type="submit" name="Submit">
+</form>
