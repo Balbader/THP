@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title class="p-5">Créer un potin</title>
+  </head>
+  <body>
+    <h1>Crée un potin !</h1>
+    <p>Balance ton potin via le formulaire ci-dessous</p>
+    
+    <%= form_for :gossip, url: gossip_index_path  do |f| %>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  
+  <div class="form-group">
+    <label>Titre de l'article</label>
+    <%= f.text_field :title, class: 'form-control' %><br />
+  </div>
+
+  <div class="form-group">
+    <label>Contenu de l'article</label>
+    <%= f.text_field :content, class: 'form-control'  %><br />
+  <div>  
+
+  <div class="form-group">
+    <%= f.submit %> 
+  <div>  
+  
+  
+  
+<% end %>
+  </body>
+</html>
