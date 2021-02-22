@@ -1,0 +1,368 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f6e7;
+}
+
+/*==================== Header Section ================*/
+
+header {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.title {
+  font-size: 80px;
+  margin-top: -10px;
+  margin-bottom: -30px;
+  background: -webkit-linear-gradient(left, rgb(114, 13, 13) , rgb(254, 55, 55));
+  background: -o-linear-gradient(right, rgb(114, 13, 13), rgb(254, 55, 55));
+  background: -moz-linear-gradient(right, rgb(114, 13, 13), rgb(254, 55, 55));
+  background: linear-gradient(to right, rgb(114, 13, 13), rgb(254, 55, 55));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro {
+  font-size: 20px;
+  font-weight: lighter;
+  color: gray;
+}
+
+/*==================== Main Section ================*/
+
+.basic_elements {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.section_title {
+  font-size: 35px;
+  color: #456268;
+  text-align: left;
+  margin-left: 70px;
+}
+
+.elem_title {
+  font-size: 25px;
+  color: #456268;
+  text-align: left;
+  margin-left: 70px;
+  margin-bottom: 15px;
+
+}
+
+/*==================== Buttons Primary ================*/
+
+.btn {
+  width: 150px;
+  height: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#btn_1 {
+  background-color: brown;
+  color: white;
+}
+
+#btn_1:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#btn_2 {
+  background-color: #f0a500;
+  color: white;
+}
+
+#btn_2:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#btn_3 {
+  background-color: gray;
+  color: white;
+}
+
+#btn_3:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#btn_4 {
+  background-color: red;
+  color: white;
+}
+
+#btn_4:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#btn_5 {
+  background-color: green;
+  color: white;
+}
+
+#btn_5:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#btn_6 {
+  background-color: #383e56;
+  color: white;
+}
+
+#btn_6:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#btn_7 {
+  background-color: #314e52;
+  color: white;
+}
+
+#btn_7:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#btn_8 {
+  background-color: #5b5b5b;
+  color: white;
+}
+
+#btn_8:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+
+/*==================== Buttons Outline ================*/
+
+#out_1 {
+  background-color: #f7f6e7;
+  border: solid 1px;
+  border-color: brown;
+  color: brown;
+}
+
+#out_1:hover {
+  background-color: brown;
+  color: white;
+  transition: 0.3s;
+}
+
+#out_2 {
+  background-color: #f7f6e7;
+  border: solid 1px;
+  border-color:#f0a500;
+  color: #f0a500;
+}
+
+#out_2:hover {
+  background-color: #f0a500;
+  color: white;
+  transition: 0.3s;
+}
+
+#out_3 {
+  background-color: #f7f6e7;
+  border: solid 1px;
+  border-color: gray;
+  color: gray;
+}
+
+#out_3:hover {
+  background-color: gray;
+  color: white;
+  transition: 0.3s;
+}
+
+#out_4 {
+  background-color: #f7f6e7;
+  border: solid 1px;
+  border-color: red;
+  color: red;
+}
+
+#out_4:hover {
+  background-color: red;
+  color: white;
+  transition: 0.3s;
+}
+
+#out_5 {
+  background-color: #f7f6e7;
+  border: solid 1px;
+  border-color: green;
+  color: green;
+}
+
+#out_5:hover {
+  background-color: green;
+  color: white;
+  transition: 0.3s;
+}
+
+#out_6 {
+  background-color: #f7f6e7;
+  border: solid 1px;
+  border-color: #383e56;
+  color: #383e56;
+}
+
+#out_6:hover {
+  background-color: #383e56;
+  color: white;
+  transition: 0.3s;
+}
+
+#out_7 {
+  background-color: #f7f6e7;
+  border: solid 1px;
+  border-color: #314e52;
+  color: #314e52;
+}
+
+#out_7:hover {
+  background-color: #314e52;
+  color: white;
+  transition: 0.3s;
+}
+
+#out_8 {
+  background-color: #f7f6e7;
+  border: solid 1px;
+  border-color: #5b5b5b;
+  color: #5b5b5b;
+}
+
+#out_8:hover {
+  background-color: #5b5b5b;
+  color: white;
+  transition: 0.3s;
+}
+
+
+/*==================== Buttons Small ================*/
+
+
+.small_btn {
+  text-align: left;
+  margin-left: 70px;
+}
+
+.elem_title_sm {
+  font-size: 25px;
+  color: #456268;
+  margin-bottom: 15px;
+}
+
+.sm {
+  width: 50px;
+  height: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#sm_1 {
+  background-color: brown;
+  color: white;
+}
+
+#sm_1:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#sm_2 {
+  background-color: #f0a500;
+  color: white;
+}
+
+#sm_2:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#sm_3 {
+  background-color: gray;
+  color: white;
+}
+
+#sm_3:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#sm_4 {
+  background-color: red;
+  color: white;
+}
+
+#sm_4:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#sm_5 {
+  background-color: green;
+  color: white;
+}
+
+#sm_5:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#sm_6 {
+  background-color: #383e56;
+  color: white;
+}
+
+#sm_6:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#sm_7 {
+  background-color: #314e52;
+  color: white;
+}
+
+#sm_7:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#sm_8 {
+  background-color: #5b5b5b;
+  color: white;
+}
+
+#sm_8:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
