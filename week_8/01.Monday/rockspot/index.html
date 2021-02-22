@@ -157,6 +157,86 @@
       <br>
       <br>
     </div>
+    <div class="row">
+      <div class="box_radio">
+        <h4 class="elem_title">Checkboxes</h4>
+        <label class="checkbox" for="checkbox1">
+          <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+          Unchecked
+        </label>
+        <label class="checkbox" for="checkbox2">
+          <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
+          Checked
+        </label>
+        <label class="checkbox" for="checkbox3">
+          <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
+          Disabled unchecked
+        </label>
+        <label class="checkbox" for="checkbox4">
+          <input type="checkbox" checked="checked" value="" id="checkbox4" data-toggle="checkbox" disabled=""
+            checked="">
+          Disabled checked
+        </label>
+      </div>
+      <div class="col">
+        <h4 class="elem_title">Radio Buttons</h4>
+        <label class="radio">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+          Radio is off
+        </label>
+        <label class="radio">
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
+          Radio is on
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio"
+            disabled="">
+          Disabled radio is off
+        </label>
+        <label class="radio">
+          <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio"
+            checked="" disabled="">
+          Disabled radio is on
+        </label>
+      </div>
+      <div class="col">
+        <h4 class="elem_title">Switches</h4>
+
+        <table width="100%">
+          <tr>
+            <td width="50%" class="pbm">
+              <input type="checkbox" checked data-toggle="switch" id="custom-switch-01" />
+            </td>
+            <td class="pbm">
+              <input type="checkbox" data-toggle="switch" id="custom-switch-02" />
+            </td>
+          </tr>
+          <tr>
+            <td class="pbm">
+              <div class="bootstrap-switch-square">
+                <input type="checkbox" checked data-toggle="switch" id="custom-switch-03"
+                  data-on-text="<span class='fui-check'></span>" data-off-text="<span class='fui-cross'></span>" />
+              </div>
+            </td>
+            <td class="pbm">
+              <div class="bootstrap-switch-square">
+                <input type="checkbox" data-toggle="switch" id="custom-switch-04" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" checked disabled data-toggle="switch" id="custom-switch-5" />
+            </td>
+            <td>
+              <input type="checkbox" checked disabled data-toggle="switch" id="custom-switch-6" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
   </section>
 
 </body>

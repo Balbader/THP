@@ -453,7 +453,6 @@ header {
 }
 
 
-
 /*==================== Navbar ================*/
 
 /* Add a black background color to the top navigation */
@@ -511,4 +510,31 @@ header {
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
+}
+
+
+/*==================== Checkboxes ================*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.checkbox, .radio {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  padding-left: 32px;
+  position: relative;
+  transition: color .25s linear;
+  font-size: 14px;
+  min-height: 20px;
+  line-height: 1.5;
 }
